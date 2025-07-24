@@ -28,6 +28,8 @@
 /* This is a start to an example use with ThreadX. It currently is being used
  * to confirm that compiling with all necessary NetX ThreadX API's succeds */
 
+#ifdef HAVE_NETX
+
 #include <stdio.h>
 #include "tx_api.h"
 #include "nx_api.h"
@@ -155,3 +157,4 @@ void nx_driver_placeholder(NX_IP_DRIVER *driver_req)
 {
     NX_PARAMETER_NOT_USED(driver_req);
 }
+#endif /* HAVE_NETX */
