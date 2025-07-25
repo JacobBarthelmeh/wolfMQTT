@@ -28,6 +28,7 @@
 /* This is a start to an example use with ThreadX. It currently is being used
  * to confirm that compiling with all necessary NetX ThreadX API's succeds */
 
+#error attempting to compile the threadx example
 #ifdef HAVE_NETX
 
 #include <stdio.h>
